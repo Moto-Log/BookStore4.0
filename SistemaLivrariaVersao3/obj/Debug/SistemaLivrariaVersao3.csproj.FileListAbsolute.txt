@@ -1,0 +1,10 @@
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\SistemaLivrariaVersao3\bin\Debug\SistemaLivrariaVersao3.exe.config
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\SistemaLivrariaVersao3\bin\Debug\SistemaLivrariaVersao3.exe
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\SistemaLivrariaVersao3\bin\Debug\SistemaLivrariaVersao3.pdb
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\SistemaLivrariaVersao3\obj\Debug\SistemaLivrariaVersao3.csproj.AssemblyReference.cache
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\SistemaLivrariaVersao3\obj\Debug\SistemaLivrariaVersao3.csproj.SuggestedBindingRedirects.cache
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\SistemaLivrariaVersao3\obj\Debug\SistemaLivrariaVersao3.Properties.Resources.resources
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\SistemaLivrariaVersao3\obj\Debug\SistemaLivrariaVersao3.csproj.GenerateResource.cache
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\SistemaLivrariaVersao3\obj\Debug\SistemaLivrariaVersao3.csproj.CoreCompileInputs.cache
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\SistemaLivrariaVersao3\obj\Debug\SistemaLivrariaVersao3.exe
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\SistemaLivrariaVersao3\obj\Debug\SistemaLivrariaVersao3.pdb

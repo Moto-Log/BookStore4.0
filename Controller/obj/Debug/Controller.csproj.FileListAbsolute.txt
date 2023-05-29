@@ -1,0 +1,14 @@
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\bin\Debug\Controller.exe.config
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\bin\Debug\Controller.exe
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\bin\Debug\Controller.pdb
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\bin\Debug\Model.exe
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\bin\Debug\Model.pdb
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\bin\Debug\Model.exe.config
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\obj\Debug\Controller.csproj.AssemblyReference.cache
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\obj\Debug\Controller.csproj.SuggestedBindingRedirects.cache
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\obj\Debug\Controller.Properties.Resources.resources
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\obj\Debug\Controller.csproj.GenerateResource.cache
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\obj\Debug\Controller.csproj.CopyComplete
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\obj\Debug\Controller.exe
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\obj\Debug\Controller.pdb

@@ -1,0 +1,10 @@
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Model\bin\Debug\Model.exe.config
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Model\bin\Debug\Model.exe
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Model\bin\Debug\Model.pdb
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Model\obj\Debug\Model.csproj.SuggestedBindingRedirects.cache
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Model\obj\Debug\Model.Properties.Resources.resources
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Model\obj\Debug\Model.csproj.GenerateResource.cache
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Model\obj\Debug\Model.exe
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\Model\obj\Debug\Model.pdb
