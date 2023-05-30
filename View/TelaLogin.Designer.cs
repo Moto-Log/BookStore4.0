@@ -1,6 +1,6 @@
 ﻿namespace View
 {
-    partial class TelaDeConexao
+    partial class TelaLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -30,16 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // TelaDeConexao
+            // TelaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1264, 749);
-            this.Name = "TelaDeConexao";
-            this.Text = "TelaDeConexao";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.TelaDeConexao_Load);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Name = "TelaLogin";
+            this.Text = "TelaLogin";
             this.ResumeLayout(false);
 
         }

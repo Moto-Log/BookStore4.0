@@ -8,7 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Image = System.Drawing.Image;
 
 namespace View
 {
@@ -18,9 +20,19 @@ namespace View
         {
             InitializeComponent();
             ControllerLivros controllerLivros = new ControllerLivros();
-           
-            controllerLivros.mostrarLivros(listView1);
+
+            //codigo, image, titulo, preco,autor,descricao,genero,quantidadeEstoque
+            DataTable dataTable = new DataTable();
+
+            dataTable.Columns.Add("codigo", typeof(int));
             
+            dataTable.Columns.Add("Titulo", typeof(String));
+            dataTable.Columns.Add("Preço", typeof(double));
+            dataTable.Columns.Add("Autor", typeof(String));
+          
+            controllerLivros.mostrarLivros(dataGridViewCapa, dataTable);
+           
+
         }
         public static TelaMenu staticMenu;
 
@@ -49,20 +61,7 @@ namespace View
         }
 
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (listView1.SelectedItems.Count > 0)
-            {
-                // Obtém o item selecionado no ListView
-                ListViewItem selectedItem = listView1.SelectedItems[0];
-
-                // Obtém as informações do item selecionado
-                string informacao = selectedItem.SubItems[1].Text; // Subitem desejado, neste caso, o índice 1
-
-                // Exibe a informação no TextBox
-                txtTitulo.Text = informacao;
-            }
-        }
+       
         private void TelaMenu_Load(object sender, EventArgs e)
         {
 
@@ -90,6 +89,12 @@ namespace View
             telaGerente.FormBorderStyle = FormBorderStyle.None;
 
            telaGerente.Show();
+        }
+
+        private void dataGridViewCapa_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+          
+
         }
     }
 }

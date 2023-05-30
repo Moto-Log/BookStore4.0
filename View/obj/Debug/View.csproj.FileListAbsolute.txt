@@ -20,3 +20,4 @@ C:\Users\franc\source\repos\SistemaLivrariaVersao3\View\bin\Debug\Model.pdb
 C:\Users\franc\source\repos\SistemaLivrariaVersao3\View\bin\Debug\Model.exe.config
 C:\Users\franc\source\repos\SistemaLivrariaVersao3\View\obj\Debug\View.csproj.CopyComplete
 C:\Users\franc\source\repos\SistemaLivrariaVersao3\View\obj\Debug\View.TelaGerente.resources
+C:\Users\franc\source\repos\SistemaLivrariaVersao3\View\obj\Debug\View.TelaLogin.resources

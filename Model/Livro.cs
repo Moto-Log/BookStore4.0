@@ -31,6 +31,15 @@ namespace Model
             this.codigo = codigo;
         }
 
+        public Livro(int codigo, Image image, String titulo, double preco, String autor)
+        {
+            this.titulo = titulo;
+            this.preco = preco;
+            this.autor = autor;
+            this.image = image;
+            this.codigo = codigo;
+        }
+
         public Livro() { }
 
         public String getTitulo() {  return titulo; }

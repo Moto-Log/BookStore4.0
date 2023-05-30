@@ -30,90 +30,32 @@
         {
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.btnPesquisa = new System.Windows.Forms.Button();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.pictureBoxCapa = new System.Windows.Forms.PictureBox();
-            this.lblInformacoes = new System.Windows.Forms.Label();
-            this.txtInfomacoes = new System.Windows.Forms.TextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.funcionarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gerenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCapa)).BeginInit();
+            this.dataGridViewCapa = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCapa)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPesquisar
             // 
-            this.txtPesquisar.Location = new System.Drawing.Point(35, 105);
+            this.txtPesquisar.Location = new System.Drawing.Point(262, 171);
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(605, 20);
             this.txtPesquisar.TabIndex = 0;
             // 
             // btnPesquisa
             // 
-            this.btnPesquisa.Location = new System.Drawing.Point(673, 102);
+            this.btnPesquisa.Location = new System.Drawing.Point(925, 171);
             this.btnPesquisa.Name = "btnPesquisa";
             this.btnPesquisa.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisa.TabIndex = 1;
             this.btnPesquisa.Text = "Pesquisar";
             this.btnPesquisa.UseVisualStyleBackColor = true;
             this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(726, 519);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(33, 13);
-            this.lblTitulo.TabIndex = 18;
-            this.lblTitulo.Text = "Titulo";
-            // 
-            // txtTitulo
-            // 
-            this.txtTitulo.Enabled = false;
-            this.txtTitulo.Location = new System.Drawing.Point(775, 516);
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(158, 20);
-            this.txtTitulo.TabIndex = 17;
-            // 
-            // pictureBoxCapa
-            // 
-            this.pictureBoxCapa.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxCapa.Location = new System.Drawing.Point(760, 263);
-            this.pictureBoxCapa.Name = "pictureBoxCapa";
-            this.pictureBoxCapa.Size = new System.Drawing.Size(190, 226);
-            this.pictureBoxCapa.TabIndex = 16;
-            this.pictureBoxCapa.TabStop = false;
-            // 
-            // lblInformacoes
-            // 
-            this.lblInformacoes.AutoSize = true;
-            this.lblInformacoes.Location = new System.Drawing.Point(1019, 252);
-            this.lblInformacoes.Name = "lblInformacoes";
-            this.lblInformacoes.Size = new System.Drawing.Size(65, 13);
-            this.lblInformacoes.TabIndex = 20;
-            this.lblInformacoes.Text = "Informacoes";
-            // 
-            // txtInfomacoes
-            // 
-            this.txtInfomacoes.Location = new System.Drawing.Point(1022, 278);
-            this.txtInfomacoes.Multiline = true;
-            this.txtInfomacoes.Name = "txtInfomacoes";
-            this.txtInfomacoes.Size = new System.Drawing.Size(245, 119);
-            this.txtInfomacoes.TabIndex = 19;
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(35, 197);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(605, 351);
-            this.listView1.TabIndex = 21;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
@@ -156,17 +98,21 @@
             this.gerenteToolStripMenuItem.Text = "Gerente";
             this.gerenteToolStripMenuItem.Click += new System.EventHandler(this.gerenteToolStripMenuItem_Click);
             // 
+            // dataGridViewCapa
+            // 
+            this.dataGridViewCapa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCapa.Location = new System.Drawing.Point(262, 257);
+            this.dataGridViewCapa.Name = "dataGridViewCapa";
+            this.dataGridViewCapa.Size = new System.Drawing.Size(738, 284);
+            this.dataGridViewCapa.TabIndex = 25;
+            this.dataGridViewCapa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCapa_CellContentClick);
+            // 
             // TelaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.lblInformacoes);
-            this.Controls.Add(this.txtInfomacoes);
-            this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.txtTitulo);
-            this.Controls.Add(this.pictureBoxCapa);
+            this.Controls.Add(this.dataGridViewCapa);
             this.Controls.Add(this.btnPesquisa);
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.menuStrip1);
@@ -174,9 +120,9 @@
             this.Name = "TelaMenu";
             this.Text = "TelaMenu";
             this.Load += new System.EventHandler(this.TelaMenu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCapa)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCapa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,16 +132,11 @@
 
         private System.Windows.Forms.TextBox txtPesquisar;
         private System.Windows.Forms.Button btnPesquisa;
-        private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.PictureBox pictureBoxCapa;
-        private System.Windows.Forms.Label lblInformacoes;
-        private System.Windows.Forms.TextBox txtInfomacoes;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem funcionarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gerenteToolStripMenuItem;
-        public System.Windows.Forms.TextBox txtTitulo;
+        private System.Windows.Forms.DataGridView dataGridViewCapa;
     }
 }

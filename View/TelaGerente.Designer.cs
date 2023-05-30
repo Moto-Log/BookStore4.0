@@ -61,6 +61,7 @@
             this.Controls.Add(this.btnCadastrarLivro);
             this.Name = "TelaGerente";
             this.Text = "TelaGerente";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TelaGerente_Load);
             this.ResumeLayout(false);
 

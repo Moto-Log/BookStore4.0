@@ -1,6 +1,7 @@
 ﻿using Model;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,54 +30,22 @@ namespace Controller
             }
         }
 
-        public void mostrarLivros(ListView listView1)
+        public void mostrarLivros(DataGridView dataGridView, DataTable dataTable)
         {
-            // public Livro(int codigo, Image image, String titulo, double preco, String autor, 
-            //String Descricao, String genero, int quantidadeEstoque)
-            listView1.Columns.Add("Codigo", 70).TextAlign = HorizontalAlignment.Center;
-            listView1.Columns.Add("Titulo", 70).TextAlign = HorizontalAlignment.Center;
-            listView1.Columns.Add("Preço", 70).TextAlign = HorizontalAlignment.Center;
-            listView1.Columns.Add("Autor", 70).TextAlign = HorizontalAlignment.Center;
-            listView1.Columns.Add("Descrição", 70).TextAlign = HorizontalAlignment.Center;
-            listView1.Columns.Add("Genero", 70).TextAlign = HorizontalAlignment.Center;
-            listView1.Columns.Add("Imagem", 70).TextAlign = HorizontalAlignment.Center;
-            listView1.Columns.Add("Quantidade Estoque", 70).TextAlign = HorizontalAlignment.Center;
 
-            listView1.View = View.Details;
-           
-           
-
+            
+            //codigo, image, titulo, preco,autor,descricao,genero,quantidadeEstoque
             foreach (Livro livro in ListaDeLivros.ListaLivros)
             {
-                String[] item = new String[8];
-                item[0] = livro.getCodigo().ToString(); 
-                item[1] = livro.getTitulo();
-                item[2] = livro.getPreco().ToString();
-                item[3] = livro.getAutor().ToString();
-                item[4] = livro.getDescricao().ToString();
-                item[5] = livro.getGenero().ToString();
-                item[6] = livro.getimage().ToString();
-                item[7] = livro.getquantidadeEstoque().ToString();
-                listView1.Items.Add(new ListViewItem(item));
-            }
-           
 
-        }
-
-        public void eaiLivros(ListView listView1)
-        {
-            foreach(Livro livro in ListaDeLivros.ListaLivros){
+              dataTable.Rows.Add(livro.getCodigo(),livro.getTitulo(),livro.getPreco(),livro.getAutor());
                 
-
-               
             }
-              
-            
 
-              
-            
+            dataGridView.DataSource = dataTable;
+
+
         }
-    
 
 
         public void cadastrarLivro(int codigo, Image image, String titulo, double preco, String autor,
@@ -87,6 +56,9 @@ namespace Controller
             Descricao, genero,  quantidadeEstoque);
 
             ListaDeLivros.ListaLivros.Add(livro);
+
+
+
 
         }
 
