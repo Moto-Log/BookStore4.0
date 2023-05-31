@@ -30,84 +30,45 @@
         {
             this.pictureBoxCapa = new System.Windows.Forms.PictureBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.txtAutor = new System.Windows.Forms.TextBox();
-            this.txtNumeroEstoque = new System.Windows.Forms.TextBox();
-            this.txtNumeroPaginas = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.lblAutor = new System.Windows.Forms.Label();
-            this.lblNumeroEstoque = new System.Windows.Forms.Label();
-            this.lblNumeroPaginas = new System.Windows.Forms.Label();
-            this.lblDescricao = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblPreco = new System.Windows.Forms.Label();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.lblGenero = new System.Windows.Forms.Label();
-            this.txtGenero = new System.Windows.Forms.TextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.txtGenero = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtAutor = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCapa)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxCapa
             // 
             this.pictureBoxCapa.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxCapa.Location = new System.Drawing.Point(257, 204);
+            this.pictureBoxCapa.Location = new System.Drawing.Point(397, 179);
+            this.pictureBoxCapa.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxCapa.Name = "pictureBoxCapa";
-            this.pictureBoxCapa.Size = new System.Drawing.Size(190, 226);
+            this.pictureBoxCapa.Size = new System.Drawing.Size(253, 278);
+            this.pictureBoxCapa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxCapa.TabIndex = 0;
             this.pictureBoxCapa.TabStop = false;
             this.pictureBoxCapa.Click += new System.EventHandler(this.pictureBoxCapa_Click);
             // 
             // txtTitulo
             // 
-            this.txtTitulo.Location = new System.Drawing.Point(272, 457);
+            this.txtTitulo.Location = new System.Drawing.Point(397, 502);
+            this.txtTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(158, 20);
+            this.txtTitulo.Size = new System.Drawing.Size(253, 22);
             this.txtTitulo.TabIndex = 2;
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(647, 173);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(270, 20);
-            this.txtCodigo.TabIndex = 3;
-            // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Location = new System.Drawing.Point(647, 492);
-            this.txtDescricao.Multiline = true;
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(270, 104);
-            this.txtDescricao.TabIndex = 4;
-            // 
-            // txtAutor
-            // 
-            this.txtAutor.Location = new System.Drawing.Point(647, 220);
-            this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new System.Drawing.Size(270, 20);
-            this.txtAutor.TabIndex = 5;
-            // 
-            // txtNumeroEstoque
-            // 
-            this.txtNumeroEstoque.Location = new System.Drawing.Point(647, 266);
-            this.txtNumeroEstoque.Name = "txtNumeroEstoque";
-            this.txtNumeroEstoque.Size = new System.Drawing.Size(270, 20);
-            this.txtNumeroEstoque.TabIndex = 6;
-            // 
-            // txtNumeroPaginas
-            // 
-            this.txtNumeroPaginas.Location = new System.Drawing.Point(647, 323);
-            this.txtNumeroPaginas.Name = "txtNumeroPaginas";
-            this.txtNumeroPaginas.Size = new System.Drawing.Size(270, 20);
-            this.txtNumeroPaginas.TabIndex = 7;
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(844, 625);
+            this.btnSalvar.Location = new System.Drawing.Point(1088, 496);
+            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(73, 23);
+            this.btnSalvar.Size = new System.Drawing.Size(97, 28);
             this.btnSalvar.TabIndex = 8;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -115,126 +76,100 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(12, 12);
+            this.btnVoltar.Location = new System.Drawing.Point(16, 15);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltar.Size = new System.Drawing.Size(100, 28);
             this.btnVoltar.TabIndex = 9;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(592, 176);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(40, 13);
-            this.lblCodigo.TabIndex = 10;
-            this.lblCodigo.Text = "Código";
-            // 
-            // lblAutor
-            // 
-            this.lblAutor.AutoSize = true;
-            this.lblAutor.Location = new System.Drawing.Point(592, 220);
-            this.lblAutor.Name = "lblAutor";
-            this.lblAutor.Size = new System.Drawing.Size(32, 13);
-            this.lblAutor.TabIndex = 11;
-            this.lblAutor.Text = "Autor";
-            // 
-            // lblNumeroEstoque
-            // 
-            this.lblNumeroEstoque.AutoSize = true;
-            this.lblNumeroEstoque.Location = new System.Drawing.Point(540, 269);
-            this.lblNumeroEstoque.Name = "lblNumeroEstoque";
-            this.lblNumeroEstoque.Size = new System.Drawing.Size(101, 13);
-            this.lblNumeroEstoque.TabIndex = 12;
-            this.lblNumeroEstoque.Text = "Número de Estoque";
-            // 
-            // lblNumeroPaginas
-            // 
-            this.lblNumeroPaginas.AutoSize = true;
-            this.lblNumeroPaginas.Location = new System.Drawing.Point(540, 326);
-            this.lblNumeroPaginas.Name = "lblNumeroPaginas";
-            this.lblNumeroPaginas.Size = new System.Drawing.Size(100, 13);
-            this.lblNumeroPaginas.TabIndex = 13;
-            this.lblNumeroPaginas.Text = "Número de Páginas";
-            // 
-            // lblDescricao
-            // 
-            this.lblDescricao.AutoSize = true;
-            this.lblDescricao.Location = new System.Drawing.Point(585, 532);
-            this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(55, 13);
-            this.lblDescricao.TabIndex = 14;
-            this.lblDescricao.Text = "Descrição";
-            // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(223, 460);
+            this.lblTitulo.Location = new System.Drawing.Point(504, 482);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(33, 13);
+            this.lblTitulo.Size = new System.Drawing.Size(40, 16);
             this.lblTitulo.TabIndex = 15;
             this.lblTitulo.Text = "Titulo";
             // 
             // lblPreco
             // 
             this.lblPreco.AutoSize = true;
-            this.lblPreco.Location = new System.Drawing.Point(592, 373);
+            this.lblPreco.Location = new System.Drawing.Point(706, 287);
+            this.lblPreco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPreco.Name = "lblPreco";
-            this.lblPreco.Size = new System.Drawing.Size(35, 13);
+            this.lblPreco.Size = new System.Drawing.Size(43, 16);
             this.lblPreco.TabIndex = 17;
             this.lblPreco.Text = "Preço";
             // 
             // txtPreco
             // 
-            this.txtPreco.Location = new System.Drawing.Point(647, 370);
+            this.txtPreco.Location = new System.Drawing.Point(812, 287);
+            this.txtPreco.Margin = new System.Windows.Forms.Padding(4);
             this.txtPreco.Name = "txtPreco";
-            this.txtPreco.Size = new System.Drawing.Size(270, 20);
+            this.txtPreco.Size = new System.Drawing.Size(359, 22);
             this.txtPreco.TabIndex = 16;
             // 
             // lblGenero
             // 
             this.lblGenero.AutoSize = true;
-            this.lblGenero.Location = new System.Drawing.Point(592, 413);
+            this.lblGenero.Location = new System.Drawing.Point(706, 340);
+            this.lblGenero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGenero.Name = "lblGenero";
-            this.lblGenero.Size = new System.Drawing.Size(42, 13);
+            this.lblGenero.Size = new System.Drawing.Size(52, 16);
             this.lblGenero.TabIndex = 19;
             this.lblGenero.Text = "Genero";
             // 
             // txtGenero
             // 
-            this.txtGenero.Location = new System.Drawing.Point(647, 410);
+            this.txtGenero.FormattingEnabled = true;
+            this.txtGenero.Items.AddRange(new object[] {
+            "Terror",
+            "Suspense"});
+            this.txtGenero.Location = new System.Drawing.Point(812, 337);
             this.txtGenero.Name = "txtGenero";
-            this.txtGenero.Size = new System.Drawing.Size(270, 20);
-            this.txtGenero.TabIndex = 18;
+            this.txtGenero.Size = new System.Drawing.Size(359, 24);
+            this.txtGenero.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(708, 234);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 16);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Autor:";
+            // 
+            // txtAutor
+            // 
+            this.txtAutor.Location = new System.Drawing.Point(812, 232);
+            this.txtAutor.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAutor.Name = "txtAutor";
+            this.txtAutor.Size = new System.Drawing.Size(359, 22);
+            this.txtAutor.TabIndex = 22;
             // 
             // TelaLivro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.lblGenero);
+            this.ClientSize = new System.Drawing.Size(1827, 922);
+            this.Controls.Add(this.txtAutor);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtGenero);
+            this.Controls.Add(this.lblGenero);
             this.Controls.Add(this.lblPreco);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.lblDescricao);
-            this.Controls.Add(this.lblNumeroPaginas);
-            this.Controls.Add(this.lblNumeroEstoque);
-            this.Controls.Add(this.lblAutor);
-            this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.txtNumeroPaginas);
-            this.Controls.Add(this.txtNumeroEstoque);
-            this.Controls.Add(this.txtAutor);
-            this.Controls.Add(this.txtDescricao);
-            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.pictureBoxCapa);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaLivro";
-            this.Text = "TelaLivro";
+            this.Text = "1280; 720";
             this.Load += new System.EventHandler(this.TelaLivro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCapa)).EndInit();
             this.ResumeLayout(false);
@@ -246,22 +181,15 @@
 
         private System.Windows.Forms.PictureBox pictureBoxCapa;
         private System.Windows.Forms.TextBox txtTitulo;
-        private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.TextBox txtDescricao;
-        private System.Windows.Forms.TextBox txtAutor;
-        private System.Windows.Forms.TextBox txtNumeroEstoque;
-        private System.Windows.Forms.TextBox txtNumeroPaginas;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.Label lblAutor;
-        private System.Windows.Forms.Label lblNumeroEstoque;
-        private System.Windows.Forms.Label lblNumeroPaginas;
-        private System.Windows.Forms.Label lblDescricao;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblPreco;
         private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Label lblGenero;
-        private System.Windows.Forms.TextBox txtGenero;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.ComboBox txtGenero;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtAutor;
     }
 }

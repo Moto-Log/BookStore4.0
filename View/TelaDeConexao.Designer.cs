@@ -32,10 +32,11 @@
             // 
             // TelaDeConexao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1264, 749);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TelaDeConexao";
             this.Text = "TelaDeConexao";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

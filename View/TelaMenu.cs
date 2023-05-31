@@ -64,7 +64,6 @@ namespace View
        
         private void TelaMenu_Load(object sender, EventArgs e)
         {
-
         }
 
         private void menuToolStripMenuItem_Click(object sender, EventArgs e)

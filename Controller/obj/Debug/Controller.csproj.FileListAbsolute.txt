@@ -12,3 +12,17 @@ C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\obj\Debug\Controll
 C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\obj\Debug\Controller.csproj.CopyComplete
 C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\obj\Debug\Controller.exe
 C:\Users\franc\source\repos\SistemaLivrariaVersao3\Controller\obj\Debug\Controller.pdb
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\bin\Debug\Controller.exe.config
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\bin\Debug\Controller.exe
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\bin\Debug\Controller.pdb
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\bin\Debug\Model.exe
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\bin\Debug\Model.pdb
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\bin\Debug\Model.exe.config
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\obj\Debug\Controller.csproj.AssemblyReference.cache
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\obj\Debug\Controller.csproj.SuggestedBindingRedirects.cache
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\obj\Debug\Controller.Properties.Resources.resources
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\obj\Debug\Controller.csproj.GenerateResource.cache
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\obj\Debug\Controller.csproj.CopyComplete
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\obj\Debug\Controller.exe
+C:\Users\Amanda\Source\Repos\BookStore4.0\Controller\obj\Debug\Controller.pdb

@@ -3,7 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +18,11 @@ namespace View
     public partial class TelaLivro : Form
     {
         private static TelaLivro staticLivro;
+        //referencia da conexao
+        public SqlConnection connection;
+        private string connectionString = "Data Source=DESKTOP-JMUCA02;Initial Catalog=dbBOOkstore;Integrated Security=True";
 
+        //visual::
         public static TelaLivro ConfirmarExistenciaDaClasse
         {
             get
@@ -42,11 +48,65 @@ namespace View
         }
         public OpenFileDialog ofd = new OpenFileDialog();  // fiz um objeto para abrir um arquivo
                                                            // esse objeto vai ajudar a colocar a capa de um livro
+
+
         public TelaLivro()
         {
             InitializeComponent();
+            connection = new SqlConnection(connectionString);
         }
+        //função para add os livros no banco de dados
+        private bool AddLivro(string livroname, Double valor, string genero, string autor,  string livroImagem)
+        {
+            try
+            {
+                connection.Open();
 
+                string query = "INSERT INTO tb_livros (livroname, valor, genero, autor, livroImagem) VALUES (@livroname, @valor, @genero, @autor, @livroImagem)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@livroname", livroname);
+                command.Parameters.AddWithValue("@valor", valor);
+                command.Parameters.AddWithValue("@genero", genero);
+                command.Parameters.AddWithValue("@autor", autor);
+                command.Parameters.AddWithValue("@livroImagem", livroImagem);
+
+
+                command.ExecuteNonQuery();
+
+                connection.Close();
+
+                return true;
+            }
+            //erro no banco
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao adicionar o novo usuário: " + ex.Message);
+                return false;
+            }
+        }
+        //função para verificar se já existe
+        private bool VerificarLivroExistente(string livroname)
+        {
+            try
+            {
+                connection.Open();
+
+                string query = "SELECT COUNT(1) FROM tb_livros  WHERE livroname = @livroname";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@livroname", livroname);
+
+                int count = (int)command.ExecuteScalar();
+
+                connection.Close();
+
+                return count > 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao verificar se o nome de usuário já existe: " + ex.Message);
+                return false;
+            }
+        }
         private void TelaLivro_Load(object sender, EventArgs e)
         {
 
@@ -57,7 +117,7 @@ namespace View
             if (ofd.ShowDialog() == DialogResult.OK)
             {  // se o usuário clicou em um arquivo, o bloco de código abaixo vai ser executado
                 this.pictureBoxCapa.Image = Image.FromFile(ofd.FileName);
-
+               
                 }
             }
 
@@ -92,21 +152,33 @@ namespace View
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            ControllerLivros controllerLivros = ControllerLivros.ConfirmarExistenciaDaClasse;
+          
+            string livroname = txtTitulo.Text;
+            Double valor = Convert.ToDouble(txtPreco.Text);
+            string genero = txtGenero.Text;
+            string livroImagem = Path.GetDirectoryName(this.pictureBoxCapa.ImageLocation);
+            string autor = txtAutor.Text;
+         
+            // Verificar se o nome de usuário já existe no banco de dados
+            if (VerificarLivroExistente(livroname))
+            {
+                MessageBox.Show("O nome de usuário já existe. Escolha um nome de usuário diferente.");
+            }
 
-            //int codigo, Image image, String titulo, double preco, String autor,
-            //String Descricao, String genero, int quantidadeEstoque
-            int codigo = int.Parse(txtCodigo.Text);
-            System.Drawing.Image image = pictureBoxCapa.Image;
-            String titulo = txtTitulo.Text;
-            double preco = double.Parse(txtPreco.Text);
-            String autor = txtAutor.Text;   
-            String descricao = txtDescricao.Text;
-            String genero = txtGenero.Text;
-            int quantidadeEstoque = int.Parse(txtNumeroEstoque.Text);
-            // adicionar o numero de paginas
-
-            controllerLivros.cadastrarLivro(codigo, image, titulo, preco,autor,descricao,genero,quantidadeEstoque);
+            // Inserir novo usuário no banco de dados
+            else
+            {
+                if (AddLivro(livroname, valor,  genero, autor, livroImagem))
+                {
+                    MessageBox.Show("Novo usuário adicionado com sucesso!");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Ocorreu um erro ao adicionar o novo usuário.");
+                }
+            }
         }
+
     }
 }

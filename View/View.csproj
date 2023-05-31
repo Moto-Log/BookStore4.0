@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelaCadastroUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaCadastroUser.Designer.cs">
+      <DependentUpon>TelaCadastroUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaDeConexao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,11 +78,11 @@
     <Compile Include="TelaLivro.Designer.cs">
       <DependentUpon>TelaLivro.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaLogin.cs">
+    <Compile Include="TelaLoginUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaLogin.Designer.cs">
-      <DependentUpon>TelaLogin.cs</DependentUpon>
+    <Compile Include="TelaLoginUser.Designer.cs">
+      <DependentUpon>TelaLoginUser.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaMenu.cs">
       <SubType>Form</SubType>
@@ -96,6 +102,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TelaCadastroUser.resx">
+      <DependentUpon>TelaCadastroUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelaDeConexao.resx">
       <DependentUpon>TelaDeConexao.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,8 +114,8 @@
     <EmbeddedResource Include="TelaLivro.resx">
       <DependentUpon>TelaLivro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaLogin.resx">
-      <DependentUpon>TelaLogin.cs</DependentUpon>
+    <EmbeddedResource Include="TelaLoginUser.resx">
+      <DependentUpon>TelaLoginUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaMenu.resx">
       <DependentUpon>TelaMenu.cs</DependentUpon>

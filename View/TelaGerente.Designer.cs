@@ -34,9 +34,10 @@
             // 
             // btnCadastrarLivro
             // 
-            this.btnCadastrarLivro.Location = new System.Drawing.Point(47, 92);
+            this.btnCadastrarLivro.Location = new System.Drawing.Point(63, 113);
+            this.btnCadastrarLivro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCadastrarLivro.Name = "btnCadastrarLivro";
-            this.btnCadastrarLivro.Size = new System.Drawing.Size(118, 35);
+            this.btnCadastrarLivro.Size = new System.Drawing.Size(157, 43);
             this.btnCadastrarLivro.TabIndex = 1;
             this.btnCadastrarLivro.Text = "Cadastrar Livro";
             this.btnCadastrarLivro.UseVisualStyleBackColor = true;
@@ -44,9 +45,10 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(22, 24);
+            this.btnVoltar.Location = new System.Drawing.Point(29, 30);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(101, 26);
+            this.btnVoltar.Size = new System.Drawing.Size(135, 32);
             this.btnVoltar.TabIndex = 2;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
@@ -54,11 +56,12 @@
             // 
             // TelaGerente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 749);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnCadastrarLivro);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TelaGerente";
             this.Text = "TelaGerente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
